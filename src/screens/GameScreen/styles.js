@@ -1,13 +1,17 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import {colors, fontSize, margin} from '../../constants/theme';
+
+const { width, height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   cardContainer: {
-    flex: 1,
-    flexGrow: 0.3,    
+    height: height * 0.35,
+  },
+  cardContainerLandscape: {
+    height: height * 0.5,
   },
   confirmedText: {
     fontSize: fontSize.large,

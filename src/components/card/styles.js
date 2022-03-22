@@ -1,13 +1,14 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import { colors, margin } from '../../constants/theme';
+
+const { width, height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   card: {
-    flex: 1,
-    flexGrow: 0.4,
+    height: height / 2.2,   
     justifyContent: 'center',
     marginTop: margin.medium,
     marginHorizontal: 50,
